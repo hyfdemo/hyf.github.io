@@ -11,7 +11,7 @@ $(function(){
     //异步加载数据新闻列表
     $.ajax({
         type: "GET",
-        url: "data/index_data.php",
+        url: "data/index_data.json",
         success: function(msg){
             var html='';
             $.each(msg,function(i,val){
@@ -36,7 +36,7 @@ $(function(){
     //news异步数据加载
     $.ajax({
        type:"GET",
-        url:"data/index_news_data.php",
+        url:"data/index_news_data.json",
         success:function(msg){
             console.log(msg);
             var newsl='';
